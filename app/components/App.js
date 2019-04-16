@@ -44,11 +44,7 @@ class App extends React.Component {
       quoteAuthor: `William Shakespeare`
     };
   }
-  componentDidMount() {
-    return axios.get(this.state.url).then(
-      console.log('Mounted');
-    )
-  }
+
   render() {
     return (
       <div>
