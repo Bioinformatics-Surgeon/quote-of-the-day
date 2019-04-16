@@ -4,8 +4,9 @@ Quote = props => {
   return (
     <div className="container">
       <div className="title">{props.quoteTitle}</div>
-      <div className="body">
-        <pre>{props.quoteBody}</pre>
+      <div>
+        <pre className="body">{props.quoteBody}</pre>
+        <pre className="author">~{props.quoteAuthor}</pre>
       </div>
     </div>
   );

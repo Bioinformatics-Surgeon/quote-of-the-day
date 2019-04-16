@@ -1,5 +1,7 @@
 const React = require('react');
+const Intro = require('./Intro');
 const Quote = require('./Quote');
+const axios = require('axios');
 
 class App extends React.Component {
   constructor(props) {
@@ -42,9 +44,15 @@ class App extends React.Component {
       quoteAuthor: `William Shakespeare`
     };
   }
+  componentDidMount() {
+    return axios.get(this.state.url).then(
+      console.log('Mounted');
+    )
+  }
   render() {
     return (
       <div>
+        <Intro />
         <Quote
           quoteTitle={this.state.quoteTitle}
           quoteBody={this.state.quoteBody}
