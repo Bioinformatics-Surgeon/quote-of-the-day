@@ -18,3 +18,5 @@ output (
 path: path.reslove(\_\_direnamem 'dist') makes the dist folder
 filename: 'index_bundle.js' name of that file that is bundled
 )
+
+_yahoo weather_
