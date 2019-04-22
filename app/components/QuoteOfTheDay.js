@@ -8,6 +8,7 @@ class QuoteOfTheDay extends React.Component {
       quote: 'Hello',
       author: 'Bruce Lee'
     };
+    this.updateQuote = this.updateQuote.bind(this);
   }
 
   componentDidMount() {
@@ -15,8 +16,12 @@ class QuoteOfTheDay extends React.Component {
   }
 
   updateQuote() {
-    console.log('update quote');
-    api.fetchNewQuote();
+    let response = api.fetchNewQuote();
+    this.setState(function() {
+      return {
+        quote: response
+      };
+    });
   }
 
   render() {
