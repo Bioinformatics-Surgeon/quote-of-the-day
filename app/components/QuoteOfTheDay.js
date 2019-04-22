@@ -1,5 +1,6 @@
 const React = require('react');
 const api = require('../utils/mock-api');
+
 class QuoteOfTheDay extends React.Component {
   constructor(props) {
     super(props);
