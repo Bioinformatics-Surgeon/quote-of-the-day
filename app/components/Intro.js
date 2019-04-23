@@ -1,7 +1,7 @@
 const React = require('react');
 
-Intro = () => {
-  return <div className="intro">Quote of the Day</div>;
+Home = () => {
+  return <div className='intro'>Quote of the Day</div>;
 };
 
-module.exports = Intro;
+module.exports = Home;

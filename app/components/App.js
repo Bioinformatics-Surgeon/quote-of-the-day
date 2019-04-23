@@ -1,7 +1,11 @@
 const React = require('react');
-const Intro = require('./Intro');
+const Nav = require('./Nav');
+const Home = require('./Home');
 const Quote = require('./Quote');
-const axios = require('axios');
+const ReactRouter = require('react-router-dom');
+const Router = ReactRouter.BrowserRouter;
+const Route = ReactRouter.Route;
+const Switch = ReactRouter.Switch;
 
 class App extends React.Component {
   constructor(props) {
@@ -47,13 +51,13 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
-        <Intro />
-        <Quote
-          quoteBody={this.state.quoteBody}
-          quoteAuthor={this.state.quoteAuthor}
-        />
-      </div>
+      <Router>
+        <Nav />
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route exact path='/Quote' component={Quote} />
+        </Switch>
+      </Router>
     );
   }
 }
