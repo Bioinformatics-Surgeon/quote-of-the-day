@@ -1,5 +1,18 @@
 # QuoteOfTheDay
 
+---
+
+"Quote of the Day" returns a new Bruce Lee quote everyday or every time you refresh the page. :muscle:
+
+#### Tech Specs:
+
+- React
+- Webpack
+- NPM
+- Axios
+
+---
+
 ### Steps for Deployment:
 
 When app is ready to deploy run following:

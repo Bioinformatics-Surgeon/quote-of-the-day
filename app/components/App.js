@@ -1,6 +1,6 @@
 const React = require('react');
 const Intro = require('./Intro');
-const QuoteOfTheDay = require('./QuoteOfTheDay');
+const Quote = require('./Quote');
 const axios = require('axios');
 
 class App extends React.Component {
@@ -49,7 +49,7 @@ class App extends React.Component {
     return (
       <div>
         <Intro />
-        <QuoteOfTheDay
+        <Quote
           quoteBody={this.state.quoteBody}
           quoteAuthor={this.state.quoteAuthor}
         />

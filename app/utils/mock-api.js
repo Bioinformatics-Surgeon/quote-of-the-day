@@ -3,31 +3,18 @@ const data = require('./quotes.js');
 
 module.exports = {
   fetchNewQuote: function() {
-    return new Promise((resolve, reject) => {
+    // new Promise makes a new instance of a Promise to mock an api call.
+    // I pass the onSuccess() to reslove() which returns a random quote from my data.
+    return new Promise(resolve => {
       setTimeout(() => {
-        
-        resolve();
-      }, 1000)
-    }
-
-    
-
-    let quoteOfTheDay = '';
-
-    const promise = new Promise((resolve, reject) => {
-      setTimeout(() => {
-        resolve();
-        // reject() will return Error
-      }, 0);
+        resolve(onSuccess());
+      }, 1000);
     });
 
     function onSuccess() {
-      console.log('Hello');
-      console.log(data.quotes[0]);
       let randomNum = Math.floor(Math.random() * data.quotes.length);
       quoteOfTheDay = data.quotes[randomNum].quote;
       return quoteOfTheDay;
     }
-
   }
 };

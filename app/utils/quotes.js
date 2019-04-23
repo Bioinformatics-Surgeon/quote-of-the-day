@@ -260,10 +260,6 @@ module.exports = {
       quote:
         'I am not teaching you anything. I just help you to explore yourself.'
     },
-    {
-      quote:
-        'Forget about winning and losing; forget about pride and pain. Let your opponent graze your skin and you smash into his flesh; let him smash into your flesh and you fracture his bones; let him fracture your bones and you take his life! Do not be concerned with escaping safely – lay your life before him!!'
-    },
     { quote: 'Real living is living for others.' },
     {
       quote:
