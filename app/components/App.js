@@ -2,6 +2,7 @@ const React = require('react');
 const Nav = require('./Nav');
 const Home = require('./Home');
 const Quote = require('./Quote');
+const Contact = require('./Contact');
 const ReactRouter = require('react-router-dom');
 const Router = ReactRouter.BrowserRouter;
 const Route = ReactRouter.Route;
@@ -52,11 +53,14 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <Nav />
-        <Switch>
-          <Route exact path='/' component={Home} />
-          <Route exact path='/Quote' component={Quote} />
-        </Switch>
+        <div className='container'>
+          <Nav />
+          <Switch>
+            <Route exact path='/' component={Home} />
+            <Route path='/quote' component={Quote} />
+            <Route path='/contact' component={Contact} />
+          </Switch>
+        </div>
       </Router>
     );
   }

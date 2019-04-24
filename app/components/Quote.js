@@ -28,7 +28,7 @@ class Quote extends React.Component {
 
   render() {
     return (
-      <div className='container'>
+      <div className='border'>
         <div>
           <pre className='body'>{this.state.quote}</pre>
           <pre className='author'>~{this.state.author}</pre>
