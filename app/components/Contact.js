@@ -14,30 +14,30 @@ function Contact() {
           LinkedIn
           <a
             href='https://www.linkedin.com/in/mudanic/'
-            class='btn btn-primary'
+            className='btn btn-primary'
             target='_blank'
           >
-            <i class='fab fa-linkedin' />
+            <i className='fab fa-linkedin' />
           </a>
         </li>
         <li className='list-item'>
           Twitter
           <a
             href='https://twitter.com/TeaChaboshi?lang=en'
-            class='btn btn-primary'
+            className='btn btn-primary'
             target='_blank'
           >
-            <i class='fab fa-twitter-square' />
+            <i className='fab fa-twitter-square' />
           </a>
         </li>
         <li className='list-item'>
           GitHub
           <a
             href='https://github.com/Bioinformatics-Surgeon'
-            class='btn btn-primary'
+            className='btn btn-primary'
             target='_blank'
           >
-            <i class='fab fa-github-square' />
+            <i className='fab fa-github-square' />
           </a>
         </li>
         <li className='list-item'>Website</li>
