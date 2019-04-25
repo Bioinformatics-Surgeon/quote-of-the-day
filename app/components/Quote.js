@@ -31,7 +31,7 @@ class Quote extends React.Component {
       <div className='border'>
         <div>
           <pre className='body'>{this.state.quote}</pre>
-          <pre className='author'>~{this.state.author}</pre>
+          <pre className='author'>~ {this.state.author}</pre>
         </div>
       </div>
     );

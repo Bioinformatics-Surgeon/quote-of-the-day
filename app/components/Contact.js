@@ -9,7 +9,8 @@ function Contact() {
         className='avatar'
       />
       <h1 className='header'>Cody Goss</h1>
-      <ul>
+
+      <ul className='cone-list'>
         <li className='list-item'>
           LinkedIn
           <a
@@ -17,9 +18,10 @@ function Contact() {
             className='btn btn-primary'
             target='_blank'
           >
-            <i className='fab fa-linkedin' />
+            <i className='fab fa-linkedin linkedin-icon' />
           </a>
         </li>
+
         <li className='list-item'>
           Twitter
           <a
@@ -27,9 +29,21 @@ function Contact() {
             className='btn btn-primary'
             target='_blank'
           >
-            <i className='fab fa-twitter-square' />
+            <i className='fab fa-twitter-square twitter-icon' />
           </a>
         </li>
+
+        <li className='list-item'>
+          Website
+          <a
+            href='https://www.mudanic.com/'
+            className='btn btn-primary'
+            target='_blank'
+          >
+            <i className='fas fa-apple-alt website-icon' />
+          </a>
+        </li>
+
         <li className='list-item'>
           GitHub
           <a
@@ -37,11 +51,20 @@ function Contact() {
             className='btn btn-primary'
             target='_blank'
           >
-            <i className='fab fa-github-square' />
+            <i className='fab fa-github-square github-icon' />
           </a>
         </li>
-        <li className='list-item'>Website</li>
-        <li className='list-item'>Email</li>
+
+        <li className='list-item'>
+          Email
+          <a
+            href='https://github.com/Bioinformatics-Surgeon'
+            className='btn btn-primary'
+            target='_blank'
+          >
+            <i className='far fa-envelope email-icon' />
+          </a>
+        </li>
       </ul>
     </div>
   );
