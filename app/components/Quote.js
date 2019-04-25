@@ -6,8 +6,8 @@ class Quote extends React.Component {
     super(props);
 
     this.state = {
-      quote: '_',
-      author: 'Bruce Lee'
+      quote: ' LOADING ',
+      author: null
     };
     this.updateQuote = this.updateQuote.bind(this);
   }
@@ -20,7 +20,8 @@ class Quote extends React.Component {
     api.fetchNewQuote().then(response => {
       this.setState(function() {
         return {
-          quote: response
+          quote: response,
+          author: 'Bruce Lee'
         };
       });
     });
