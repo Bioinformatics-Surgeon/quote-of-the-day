@@ -8,7 +8,7 @@ module.exports = {
     return new Promise(resolve => {
       setTimeout(() => {
         resolve(onSuccess());
-      }, 1000);
+      }, 500);
     });
 
     function onSuccess() {
