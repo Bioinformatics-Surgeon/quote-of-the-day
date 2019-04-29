@@ -57,12 +57,14 @@ function Contact() {
 
         <li className='list-item'>
           Email
-          <a
-            href='https://github.com/Bioinformatics-Surgeon'
-            className='btn btn-primary'
-            target='_blank'
-          >
-            <i className='far fa-envelope email-icon' />
+          <a className='btn btn-primary'>
+            <div className='tooltip'>
+              {' '}
+              <span className='tooltiptext' id='myTooltip'>
+                mudanic@mudanic.com{' '}
+              </span>
+              <i className='far fa-envelope email-icon' />
+            </div>
           </a>
         </li>
       </ul>
