@@ -16,7 +16,7 @@ function Nav() {
         </NavLink>
       </li>
       <li>
-        <NavLink activeClassName='active' to='contact'>
+        <NavLink activeClassName='active' to='/contact'>
           Contact
         </NavLink>
       </li>

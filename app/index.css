@@ -101,6 +101,22 @@ a {
   margin-right: 15px;
 }
 
+.nav a {
+  padding: 12px;
+  border-radius: 5px;
+  color: firebrick;
+}
+
+.nav a:hover:enabled {
+  background: linear-gradient(#1a1a1a, #0a0a0a);
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav a:active {
+  transform: translateY(1px);
+}
+
 .linkedin-icon {
   color: firebrick;
   font-size: 40px;
@@ -110,14 +126,17 @@ a {
   color: firebrick;
   font-size: 40px;
 }
+
 .website-icon {
   font-size: 40px;
   color: firebrick;
 }
+
 .github-icon {
   font-size: 40px;
   color: firebrick;
 }
+
 .email-icon {
   font-size: 40px;
   color: firebrick;
@@ -132,30 +151,6 @@ a {
   width: 150px;
 }
 
-@media only screen and (max-width: 768px) {
-  body {
-    width: 65%;
-  }
-}
-
-@keyframes color-transform {
-  0% {
-    color: firebrick;
-  }
-  100% {
-    color: gainsboro;
-  }
-}
-
-/* @keyframes breath {
-  0% {
-    transform: scaleX(1);
-  }
-  100% {
-    transform: scaleX(1.001);
-  }
-} */
-
 div .speech {
   animation-name: color-transform;
   animation-duration: 3s;
@@ -168,14 +163,6 @@ div .speech {
   height: 100vh;
   overflow: scroll;
 }
-
-/* div .body,
-.author {
-  animation-name: breath;
-  animation-duration: 1s;
-  animation-iteration-count: infinite;
-  animation-direction: alternate;
-} */
 
 .tooltip {
   position: relative;
@@ -196,10 +183,44 @@ div .speech {
   left: -75%;
   margin-left: -75px;
   opacity: 0;
-  transition: opacity 0.3s;
+  transition: opacity 1s ease-out;
 }
 
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
+}
+
+.active {
+  font-weight: bold;
+  animation-name: border-fire;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    width: 65%;
+  }
+}
+
+@keyframes color-transform {
+  0% {
+    color: firebrick;
+  }
+  100% {
+    color: white;
+  }
+}
+
+@keyframes border-fire {
+  0% {
+    border-bottom: solid 1px firebrick;
+    color: firebrick;
+  }
+  100% {
+    border-bottom: solid 1px wheat;
+    color: wheat;
+  }
 }
