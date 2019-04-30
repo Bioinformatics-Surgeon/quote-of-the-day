@@ -24,7 +24,7 @@
   "bugs": {
     "url": "https://github.com/Bioinformatics-Surgeon/QuoteOfTheDay/issues"
   },
-  "homepage": "http://www.mudanic.com",
+  "homepage": "https://www.mudanic.com/QuoteOfTheDay/",
   "dependencies": {
     "axios": "^0.18.0",
     "gh-pages": "^2.0.1",
