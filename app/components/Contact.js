@@ -59,9 +59,8 @@ function Contact() {
           Email
           <a className='btn btn-primary'>
             <div className='tooltip'>
-              {' '}
               <span className='tooltiptext' id='myTooltip'>
-                mudanic@mudanic.com{' '}
+                mudanic@mudanic.com
               </span>
               <i className='far fa-envelope email-icon' />
             </div>
