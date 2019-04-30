@@ -159,7 +159,7 @@ eval("\nvar content = __webpack_require__(/*! !../node_modules/css-loader/dist/c
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-eval("var React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar ReactDOM = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\nvar App = __webpack_require__(/*! ./components/App */ \"./app/components/App.js\");\n\n__webpack_require__(/*! ./index.css */ \"./app/index.css\");\n\nReactDOM.render(React.createElement(App, null), document.getElementById('app'));\n\n//# sourceURL=webpack:///./app/index.js?");
+eval("var React = __webpack_require__(/*! react */ \"./node_modules/react/index.js\");\n\nvar ReactDOM = __webpack_require__(/*! react-dom */ \"./node_modules/react-dom/index.js\");\n\nvar App = __webpack_require__(/*! ./components/App */ \"./app/components/App.js\");\n\n__webpack_require__(/*! ./index.css */ \"./app/index.css\"); // This is how we render to the dom\n\n\nReactDOM.render(React.createElement(App, null), document.getElementById('app'));\n\n//# sourceURL=webpack:///./app/index.js?");
 
 /***/ }),
 
