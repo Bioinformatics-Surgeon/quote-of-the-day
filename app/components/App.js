@@ -1,9 +1,9 @@
-const React = require('react');
-const Nav = require('./Nav');
-const Home = require('./Home');
-const Quote = require('./Quote');
-const Contact = require('./Contact');
-const ReactRouter = require('react-router-dom');
+const React = require("react");
+const Nav = require("./Nav");
+const Home = require("./Home");
+const Quote = require("./Quote");
+const Contact = require("./Contact");
+const ReactRouter = require("react-router-dom");
 const Router = ReactRouter.BrowserRouter;
 const Route = ReactRouter.Route;
 const Switch = ReactRouter.Switch;
@@ -12,7 +12,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      quoteTitle: 'To be or not to be',
+      quoteTitle: "To be or not to be",
       quoteBody: `To be, or not to be, that is the question:
       Whether 'tis nobler in the mind to suffer
       The slings and arrows of outrageous fortune,
@@ -46,19 +46,19 @@ class App extends React.Component {
       And enterprises of great pitch and moment
       With this regard their currents turn awry
       And lose the name of action.`,
-      quoteAuthor: `William Shakespeare`
+      quoteAuthor: `William Shakespeare`,
     };
   }
 
   render() {
     return (
       <Router>
-        <div className='container'>
+        <div className="container">
           <Nav />
           <Switch>
-            <Route exact path='/' component={Home} />
-            <Route path='/quote' component={Quote} />
-            <Route path='/contact' component={Contact} />
+            <Route to="/" exact path="/" component={Home} />
+            <Route path="/quote" component={Quote} />
+            <Route path="/contact" component={Contact} />
           </Switch>
         </div>
       </Router>
